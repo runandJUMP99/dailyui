@@ -47,8 +47,8 @@ const Coin = () => {
                     transform: rotate
                 }}>
                     <h2>{heading}</h2>
-                    <input type="text" placeholder="First Name"/>
-                    <input type="text" placeholder="Last Name"/>
+                    <input type="text" placeholder="Username"/>
+                    <input type="password" placeholder="Password"/>
                     <button className={classes.Submit}>{heading}</button>
                     {button}
                 </div>
