@@ -1,0 +1,58 @@
+.CardInfo input {
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 2.5rem;
+    margin: 0.3rem auto;
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+}
+
+.CardInfo label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.SmallCardInfo {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0 2rem;
+}
+
+.ExpDate {
+    align-items: center;
+    display: flex;
+}
+
+.ExpDate label {
+    margin-right: 1rem;
+    margin-top: 0;
+}
+
+.ExpDate input {
+    margin: 0 0.2rem;
+    width: 50px;
+}
+
+.Cvv {
+    align-items: center;
+    display: flex;
+}
+
+.Cvv label {
+    margin-right: 1rem;
+    margin-top: 0;
+}
+
+.Cvv input {
+    margin: 0;
+    width: 60px;
+}
+
+@media (min-width: 700px) {
+    .CardInfo {
+        display: inline-block;
+    }
+}

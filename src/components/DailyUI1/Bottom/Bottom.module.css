@@ -1,0 +1,9 @@
+.Bottom {
+    background: #654062;
+    border-radius: 50% 50% 0 0;
+    bottom: 0;
+    box-shadow: 0 -2px 4px 4px rgba(0, 0, 0, 0.5);
+    height: 50%;
+    position: fixed;
+    width: 100%;
+}

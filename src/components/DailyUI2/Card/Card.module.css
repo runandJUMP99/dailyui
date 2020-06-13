@@ -1,0 +1,23 @@
+.Card {
+    background: linear-gradient(#69e9f5, #039aa7);
+    border-radius: 16px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    color: white;
+    margin: 1rem auto;
+    max-width: 350px;
+    padding: 1rem 2rem;
+    width: 90%;
+}
+
+.CardNumbers {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+}
+
+.CardNumbers h4,
+.CardNumbers p {
+    margin: 0;
+}
