@@ -6,7 +6,7 @@ import DailyUI2 from "./components/DailyUI2/DailyUI2";
 function App() {
   return (
     <div className="App">
-        <DailyUI1 />
+        <DailyUI2 />
     </div>
   );
 }

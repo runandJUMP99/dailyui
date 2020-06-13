@@ -9,7 +9,7 @@
     border-radius: 8px;
     box-sizing: border-box;
     height: 2.5rem;
-    margin: 0.3rem auto;
+    margin-top: 0.3rem;
     outline: none;
     padding: 1rem;
     width: 100%;
@@ -17,12 +17,12 @@
 
 .CustomerInfo label {
     display: block;
-    margin-top: 1rem;
+    margin: 1rem 0 0;
 }
 
 .CustomerInfo p {
     font-size: 1.5rem;
-    margin: 0.5rem 0 0;
+    margin: 0.5rem auto 0;
 }
 
 #PhoneThree {
@@ -32,4 +32,26 @@
 
 #PhoneFour {
     width: 62px;
+}
+
+@media (min-width: 700px) {
+    .CustomerInfo {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .NameAndNumber {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+    .Address {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }

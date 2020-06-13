@@ -21,3 +21,9 @@
 .CardNumbers p {
     margin: 0;
 }
+
+@media (min-width: 700px) {
+    .Card {
+        margin: 0;
+    }
+}

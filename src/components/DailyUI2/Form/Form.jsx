@@ -8,8 +8,8 @@ import classes from "./Form.module.css";
 const Form = () => {
     return (
         <div className={classes.Form}>
-            <div className={classes.OrderInfo}>
-                <CustomerInfo />
+            <CustomerInfo />
+            <div className={classes.CardInfo}>
                 <CardInfo />
             </div>
             <button>Submit!</button>
