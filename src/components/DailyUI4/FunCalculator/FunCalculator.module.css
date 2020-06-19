@@ -1,0 +1,89 @@
+.FunCalculatorContainer {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.FunCalculator {
+    align-items: center;
+    background: #5bcd5b;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 4px #339633;
+    color: #1b1b2f;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    height: 475px;
+    justify-content: center;
+    position: relative;
+    width: 300px;
+}
+
+.FunCalculator h1 {
+    align-self: flex-start;
+    color: #1b1b2f;
+    left: 2.2rem;
+    position: absolute;
+    top: 0.8rem;
+}
+
+.FunCalculator form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    justify-content: center;
+}
+
+.FunCalculator input {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 1rem 0.5rem;
+    outline: none;
+    text-align: center;
+    width: 2rem;
+}
+
+.FunCalculator select {
+    background: #1f4068;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px 1px #112946;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    outline: none;
+    padding: 0.5rem;
+    width: 13.4rem;
+}
+
+.FunCalculator select:hover {
+    box-shadow: 0 2px 2px 2px #112946;
+    cursor: pointer;
+}
+
+.FunCalculator button {
+    background: #1f4068;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px 1px #112946;
+    color: white;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    outline: none;
+    padding: 1rem 2rem;
+    width: 13.4rem;
+}
+
+.FunCalculator button:hover {
+    box-shadow: 0 2px 2px 2px #112946;
+    cursor: pointer;
+}
+
+.FunCalculator button:active {
+    background: #162447;
+    box-shadow: 0 0 0 0;
+}

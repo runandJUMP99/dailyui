@@ -1,0 +1,48 @@
+.PlantToolbar {
+    color: #10375c;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+}
+
+.PlantToolbar div {
+    display: flex;
+}
+
+.PlantToolbar h3 {
+    margin: 0;
+    padding: 0.5rem 2rem 0.5rem 0;
+}
+
+.PlantToolbar input {
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    padding: 0.5rem 1rem;
+}
+
+.PlantToolbar select {
+    background: #10375c;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s linear;
+}
+
+.PlantToolbar select:hover {
+    box-shadow: 0 1px 4px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.PlantToolbar option {
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}

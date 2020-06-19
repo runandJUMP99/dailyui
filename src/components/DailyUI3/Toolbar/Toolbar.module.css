@@ -1,0 +1,97 @@
+.Toolbar {
+    font-weight: bold;
+    margin: auto;
+    padding: 0.5rem 0;
+    width: 90%;
+}
+
+.Toolbar ul {
+    align-items: center;
+    color: #10375c;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+}
+
+.Toolbar a {
+    align-items: center;
+    color: #10375c;
+    display: flex;
+    text-decoration: none;
+}
+
+.Toolbar img {
+    width: 3rem;
+}
+
+.Toolbar a:hover {
+    color: #127681;
+}
+
+.Toolbar li {
+    margin: 0 0.5rem;
+}
+
+.Toolbar li:hover {
+    color: #127681;
+    cursor: pointer;
+}
+
+
+.Links {
+    align-items: center;
+    display: flex;
+    transition: all 0.2s ease-out;
+}
+
+.Links div:hover {
+    cursor: pointer;
+}
+
+.AccountLinks {
+    align-items: center;
+    display: flex;
+}
+
+.AccountLinks li:first-child {
+    background: #10375c;
+    border-radius: 50%;
+    color: white;
+    padding: 0.5rem 0.85rem;
+    text-align: center;
+    transition: all 0.2s ease-out;
+}
+
+.AccountLinks li:last-child {
+    background: #10375c;
+    border-radius: 32px;
+    color: white;
+    margin-right: 0;
+    padding: 0.5rem 0.6rem 0.6rem;
+    transition: all 0.2s ease-out;
+}
+
+.AccountLinks li:first-child:hover,
+.AccountLinks li:last-child:hover {
+    background: #f4f6ff;
+    color: #127681;
+}
+
+.Toolbar input {
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s linear;
+    z-index: 10;
+}
+
+.Backdrop {
+    height: 40vh;
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}

@@ -1,0 +1,14 @@
+.Footer {
+    background: #10375c;
+    color: hsl(229, 100%, 98%);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.Footer a {
+    margin: 0 1rem;
+}
+
+.Footer p {
+    margin-bottom: 0;
+}

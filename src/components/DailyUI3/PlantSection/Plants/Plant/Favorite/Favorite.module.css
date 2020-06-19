@@ -1,0 +1,18 @@
+.Favorite {
+    background: #dde1f7;
+    border-radius: 8px;
+    padding: 0.1rem 0.4rem;
+    transition: all 0.2s linear;
+    width: 1.5rem;
+}
+
+.Favorite:hover,
+.Favorite:active {
+    border-radius: 50%;
+    background: #c0c5dd;
+    cursor: pointer;
+}
+
+.Heart {
+    margin-top: 0.3rem;
+}

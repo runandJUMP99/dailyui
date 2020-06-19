@@ -1,0 +1,34 @@
+.Calculator {
+    align-items: center;
+    background: #e43f5a;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 4px #721827;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 475px;
+    margin: auto;
+    width: 300px;
+}
+
+.Calculator h1 {
+    align-self: flex-start;
+    color: #1b1b2f;
+    margin-left: 2.2rem;
+}
+
+.Display {
+    background: #1b1b2f;
+    border-radius: 8px;
+    color: white;
+    font-size: 2rem;
+    height: 3rem;
+    margin-bottom: 0.8rem;
+    padding: 0 0.5rem;
+    text-align: right;
+    width: 13.4rem;
+}
+
+.Row {
+    display: flex;
+}

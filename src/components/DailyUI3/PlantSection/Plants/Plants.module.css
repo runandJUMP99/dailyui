@@ -1,0 +1,9 @@
+.Plants {
+    background: #f4f6ff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem 0;
+    width: 92%;
+}

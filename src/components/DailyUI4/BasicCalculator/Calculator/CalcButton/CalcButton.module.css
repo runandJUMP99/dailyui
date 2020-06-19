@@ -1,0 +1,25 @@
+.CalcButton {
+    align-items: center;
+    background: #1f4068;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px 1px #112946;
+    color: white;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 3rem;
+    justify-content: center;
+    margin: 0.4rem;
+    text-align: center;
+    width: 3rem;
+}
+
+.CalcButton:hover {
+    box-shadow: 0 2px 2px 2px #112946;
+    cursor: pointer;
+}
+
+.CalcButton:active {
+    background: #162447;
+    box-shadow: 0 0 0 0;
+}

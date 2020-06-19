@@ -1,0 +1,48 @@
+.DailyUI4 {
+    background: #162447;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.LightEffect {
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: all 0.2s linear;
+}
+
+.MainHeading {
+    color: white;
+    font-family: "Press Start 2P", cursive;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    margin: 0;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.Calculators {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.Calculator {
+    position: relative;
+    transition: all 0.5s ease-out;
+}
+
+.SelectionBox {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.SelectionBox:hover {
+    cursor: pointer;
+}
+
