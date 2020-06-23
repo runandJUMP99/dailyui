@@ -29,7 +29,7 @@ const Toolbar = () => {
         <div className={classes.Toolbar}>
             <ul>
                 <a href="/">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/mycv-bdfa2.appspot.com/o/plantDaddyLogo.svg?alt=media&token=bc46cd7e-1f9c-41db-97cd-1eb9fbfa3c85" alt="plantDaddy Logo"/>
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dailyui-80a05.appspot.com/o/plantDaddy%2FplantDaddyLogo.svg?alt=media&token=1f8b767f-7fd7-4258-a9e2-5bc9b2dca738" alt="plantDaddy Logo"/>
                     <li>plantDaddy</li>
                 </a>
                 {toolbarMiddle}

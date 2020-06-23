@@ -10,7 +10,7 @@ const Jumbotron = () => {
                 <p>Find out more about your favorite plants and save them to your profile!</p>
                 <a href="/">Start now!</a>
             </div>
-            <img src="https://firebasestorage.googleapis.com/v0/b/mycv-bdfa2.appspot.com/o/plantPapa.svg?alt=media&token=6a37cede-f442-4fd7-b0f4-7f3fb8cced43" alt="plantPapa"/>
+            <img src="https://firebasestorage.googleapis.com/v0/b/dailyui-80a05.appspot.com/o/plantDaddy%2FplantPapa.svg?alt=media&token=3e6afc1c-d344-48cc-8fd7-ef0a674d9085" alt="plantPapa"/>
         </div>
     );
 }
