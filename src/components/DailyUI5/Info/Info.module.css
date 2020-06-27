@@ -1,0 +1,13 @@
+.Info {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.Quote {
+    color: #fa7d09;
+    font-size: 2rem;
+}
+
+.Quote i {
+    color: #ff4301;
+}

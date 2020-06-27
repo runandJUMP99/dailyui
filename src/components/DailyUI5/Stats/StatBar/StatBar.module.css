@@ -1,0 +1,8 @@
+.StatBar {
+    background: #ff4301;
+    border-radius: 4px;
+    display: flex;
+    font-weight: bold;
+    height: 1rem;
+    margin: 1rem 0;
+}

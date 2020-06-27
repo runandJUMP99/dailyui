@@ -1,0 +1,61 @@
+.DailyUI5 {
+    color: #fa7d09;
+    height: 100vh;
+}
+
+.Profile {
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+
+.TopHalf {
+    align-items: center;
+    background: #4a3f35;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-around;
+    padding: 5rem 0;
+}
+
+.BottomHalf {
+    background: #2f2519;
+    border-radius: 32px 32px 0 0;
+    bottom: 2rem;
+    box-shadow: 0 -1px 8px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.Buttons {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.Buttons button {
+    background: #fa7d09;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 2px #cf6502;
+    color: #2f2519;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 1rem;
+    outline: none;
+    padding: 1rem 2rem;
+}
+
+.Buttons button:hover {
+    background: #ff4301;
+    box-shadow: 0 2px 2px 2px #ce3903;
+    color: #eee;
+    cursor: pointer;
+}
+
+.Buttons button:active {
+    background: #ce3903;
+    box-shadow: 0 0 0 0;
+    transform: translateY(0.3rem);
+}
