@@ -1,10 +1,27 @@
 .InfoDetails {
     display: flex;
-    font-size: 1.5rem;
-    justify-content: space-evenly;
+    font-size: 1rem;
+    justify-content: space-around;
     text-align: left;
+    transition: all 0.5s ease-out;
+}
+
+.InfoDetails p {
+    border-left: 2px solid #ff4301;
+    font-size: 1rem;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+    width: 40%;
+}
+
+.BasicDetails {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
 }
 
 .InfoDescription h3 {
     font-weight: normal;
 }
+

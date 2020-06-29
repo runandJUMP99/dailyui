@@ -1,0 +1,26 @@
+.Slider label {
+    color: white;
+    display: block;
+    font-weight: bold;
+}
+
+.Slider input {
+    background: green;
+    color: red;
+    margin: auto;
+}
+
+.Slider button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0.2rem;
+    outline: none;
+    transition: all 0.4s ease-out;
+}
+
+.Slider button:hover {
+    cursor: pointer;
+}

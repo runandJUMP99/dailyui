@@ -1,0 +1,8 @@
+.DailyUI7 {
+    align-items: center;
+    background: radial-gradient(#08acac, #eb15e0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

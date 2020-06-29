@@ -18,7 +18,8 @@ const DailyUI5 = () => {
             weight: "92 lbs",
             class: "Warrior",
             weapon: "Two-Handed Axe",
-            quote: "I slam. They fall"
+            quote: "I slam. They fall",
+            description: "Sluggernaut INSISTS on using his two-handed axe, Olga. But with it being two times his weight and three times his size, it makes him a big sluggish. Oh... and it hurts!"
         }
     }, {
         characterStats: {
@@ -31,7 +32,8 @@ const DailyUI5 = () => {
             weight: "222 lbs",
             class: "Assassin",
             weapon: "Roll",
-            quote: "Roll out!"
+            quote: "Roll out!",
+            description: "He may seem slow, but his frame is built for speed! Rumple is able to roll into a fight, do damage, and bounce away before the enemy even notices."
         }
     }, {
         characterStats: {
@@ -40,45 +42,22 @@ const DailyUI5 = () => {
             intellect: "90%"
         },
         characterInfo: {
-            name: "Octaleron",
+            name: "Moogi",
             weight: "126 lbs",
             class: "Mage",
             weapon: "Necronomicon",
-            quote: "Spells on spells on spells"
+            quote: "Spells on spells on spells",
+            description: "Stay back, cast spells, and unleash chaos! Moogi and her crystals are great at dealing high damage, but her low hp makes her weak in the front line."
         }
     }];
 
-    const [index, setIndex] = useState(1);
-    const [style, setStyle] = useState({
-        display: {transform: "translateX(0)"},
-        left: {transform: "translateX(-100%)"},
-        right: {position: "fixed", transform: "translateX(100%)"}
-    });
+    
+    const [index, setIndex] = useState(0);
+    const [character, setCharacter] = useState(characters[0]);
+    const [fade, setFade] = useState(false);
 
     function handleClick(selection) {
-        
-
         if (selection === "prev") {
-            if (index === 0) {
-                setStyle({
-                    display: {transform: "translateX(0)", transition: "all 1s ease-out"},
-                    left: {transform: "translateX(-100%)", transition: "all 1s ease-out"},
-                    right: {position: "fixed", transform: "translateX(100%)", transition: "none"}
-                });
-            } else if (index === 1) {
-                setStyle({
-                    display: {transform: "translateX(-100%)", transition: "all 1s ease-out"},
-                    left: {position: "fixed", transform: "translateX(100%)", transition: "none"},
-                    right: {transform: "translateX(0)", transition: "all 1s ease-out"}
-                });
-            } else {
-                setStyle({
-                    display: {position: "fixed", transform: "translateX(100%)", transition: "none"},
-                    left: {transform: "translateX(0)", transition: "all 1s ease-out"},
-                    right: {transform: "translateX(-100%)", transition: "all 1s ease-out"}
-                });
-            }
-
             if (index <= 0) {
                 setIndex(characters.length - 1);
             } else {
@@ -95,55 +74,31 @@ const DailyUI5 = () => {
                     prevValue + 1
                 ));
             }
-            
-            setStyle({
-                display: {position: "fixed", transform: "translateX(100%)", transition: "all 1s ease-out"},
-                left: {transform: "translateX(0)", transition: "all 1s ease-out"},
-                right: {transform: "translateX(-100%)"}
-            });
         }
-        
+
+        setFade(true);        
+        setTimeout(() => {
+            setFade(false);
+            setCharacter(characters[index]);
+        }, 500);
     }
 
     return (
         <div className={classes.DailyUI5}>
-            <div className={classes.Profile} style={style.left}>
-                <div className={classes.TopHalf}>
+            <h1>SELECT YOUR PLAYER</h1>
+            <div className={classes.TopHalf}>
+                <div className={classes.TopHalfContent}>
                     <Avatar />
-                    <Stats character={characters[0]}/>
-                </div>
-                <div className={classes.BottomHalf}>
-                    <Info character={characters[0]}/>
-                    <div className={classes.Buttons}>
-                        <button onClick={() => handleClick("prev")}>Prev</button>
-                        <button onClick={() => handleClick("next")}>Next</button>
-                    </div>
+                    <Stats character={character}/>
                 </div>
             </div>
-            <div className={classes.Profile} style={style.display}>
-                <div className={classes.TopHalf}>
-                    <Avatar />
-                    <Stats character={characters[1]}/>
+            <div className={classes.BottomHalf}>
+                <div style={{opacity: fade && 0, transition: "opacity 0.5s linear"}}>
+                    <Info character={character}/>
                 </div>
-                <div className={classes.BottomHalf}>
-                    <Info character={characters[1]}/>
-                    <div className={classes.Buttons}>
-                        <button onClick={() => handleClick("prev")}>Prev</button>
-                        <button onClick={() => handleClick("next")}>Next</button>
-                    </div>
-                </div>
-            </div>
-            <div className={classes.Profile} style={style.right}>
-                <div className={classes.TopHalf}>
-                    <Avatar />
-                    <Stats character={characters[2]}/>
-                </div>
-                <div className={classes.BottomHalf}>
-                    <Info character={characters[2]}/>
-                    <div className={classes.Buttons}>
-                        <button onClick={() => handleClick("prev")}>Prev</button>
-                        <button onClick={() => handleClick("next")}>Next</button>
-                    </div>
+                <div className={classes.Buttons}>
+                    <button onClick={() => handleClick("prev")}>Prev</button>
+                    <button onClick={() => handleClick("next")}>Next</button>
                 </div>
             </div>
         </div>

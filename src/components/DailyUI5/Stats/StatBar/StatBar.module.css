@@ -4,5 +4,6 @@
     display: flex;
     font-weight: bold;
     height: 1rem;
-    margin: 1rem 0;
+    margin: 0.4rem 0;
+    transition: all 0.5s ease-out;
 }
