@@ -1,5 +1,7 @@
 .Moods {
     display: flex;
+    justify-content: space-between;
+    width: 85%;
 }
 
 .Moods button {
@@ -15,7 +17,14 @@
     outline: none;
     padding: 0.8rem 1rem;
     transition: all 0.4s ease-out;
-    ;
+}
+
+.Moods button:first-child {
+    margin-left: 0;
+}
+
+.Moods button:last-child {
+    margin-right: 0;
 }
 
 .Moods button:hover {

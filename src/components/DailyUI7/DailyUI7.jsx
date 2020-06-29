@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 import Moods from "./Moods/Moods";
 import Sliders from "./Sliders/Sliders";
@@ -11,6 +11,22 @@ const DailyUI7 = () => {
         Volume: 50,
         Lights: 50
     });
+    const [jumboValue, setJumboValue] = useState(10);
+    const [jumboStyle, setJumboStyle] = useState(null);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setJumboStyle({display: "block", opacity: 0});
+            
+            const secondTimeout = setTimeout(() => {
+                setJumboStyle({display: "none"})
+            }, 1000);
+        }, 2000);
+
+        return () => {
+            clearTimeout(timeout);
+        };
+    }, [jumboValue]);
 
     function handleClick(selection) {
         switch(selection) {
@@ -48,6 +64,7 @@ const DailyUI7 = () => {
                     [name]: prevValues[name] + 1
                 };
             });
+            setJumboValue(sliders[name] + 1);
         } else {
             setSliders(prevValues => {
                 return {
@@ -55,13 +72,14 @@ const DailyUI7 = () => {
                     [name]: prevValues[name] - 1
                 };
             });
-        }    
+            setJumboValue(sliders[name] - 1);
+        }
+
+        setJumboStyle({display: "block", opacity: 1});
     }
 
     function handleSlide(event) {
         const {name, value} = event.target;
-
-        console.log(name, value);
 
         setSliders(prevValues => {
             return {
@@ -70,11 +88,21 @@ const DailyUI7 = () => {
             }
         });
 
-        console.log(sliders);
+        setJumboValue(parseInt(value));
+        setJumboStyle({display: "block", opacity: 1});
+
+        // setTimeout(() => {
+        //     setJumboStyle({display: "block", opacity: 0});
+            
+        //     setTimeout(() => {
+        //         setJumboStyle({display: "none"})
+        //     }, 1000);
+        // }, 2000);
     }
 
     return (
         <div className={classes.DailyUI7}>
+            <h1 className={classes.JumboValue} style={jumboStyle}>{jumboValue}</h1>
             <h1>Calm</h1>
             <Sliders onSlide={handleSlide} onChange={handleAdjustment} values={sliders}/>
             <Moods onClick={handleClick}/>

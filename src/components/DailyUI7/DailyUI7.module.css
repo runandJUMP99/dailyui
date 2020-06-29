@@ -1,8 +1,23 @@
 .DailyUI7 {
     align-items: center;
-    background: radial-gradient(#08acac, #eb15e0);
+    background: radial-gradient(farthest-corner at 120px 100px, #08acac, #ca0bc1);
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    height: 100vh;
+}
+
+.DailyUI7 h1 {
+    font-size: 3.5rem;
+    margin: 3rem auto;
+}
+
+.JumboValue {
+    display: none;
+    font-size: 10rem !important;
+    opacity: 0;
+    position: fixed;
+    transition: opacity 1s ease-out;
+    top: 10%;
+    z-index: 10;
 }
