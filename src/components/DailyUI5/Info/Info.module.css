@@ -1,11 +1,12 @@
 .Info {
-    padding: 1rem 0;
+    padding-top: 1rem;
     text-align: center;
 }
 
 .Quote {
     color: #fa7d09;
     font-size: 2rem;
+    margin: 0.5rem 0;
 }
 
 .Quote i {

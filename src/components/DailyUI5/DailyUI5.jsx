@@ -19,7 +19,8 @@ const DailyUI5 = () => {
             class: "Warrior",
             weapon: "Two-Handed Axe",
             quote: "I slam. They fall",
-            description: "Sluggernaut INSISTS on using his two-handed axe, Olga. But with it being two times his weight and three times his size, it makes him a big sluggish. Oh... and it hurts!"
+            description: "Sluggernaut INSISTS on using his two-handed axe, Olga. But with it being two times his weight and three times his size, it makes him a big sluggish. Oh... and it hurts!",
+            img: "https://firebasestorage.googleapis.com/v0/b/dailyui-80a05.appspot.com/o/profile%2FSluggernaut.svg?alt=media&token=b9ea171f-a608-44da-bf67-4d0f6eadaec3"
         }
     }, {
         characterStats: {
@@ -33,7 +34,8 @@ const DailyUI5 = () => {
             class: "Assassin",
             weapon: "Roll",
             quote: "Roll out!",
-            description: "He may seem slow, but his frame is built for speed! Rumple is able to roll into a fight, do damage, and bounce away before the enemy even notices."
+            description: "He may seem slow, but his frame is built for speed! Rumple is able to roll into a fight, do damage, and bounce away before the enemy even notices.",
+            img: "https://firebasestorage.googleapis.com/v0/b/dailyui-80a05.appspot.com/o/profile%2FRumple.svg?alt=media&token=e266d915-c2b7-4f72-8510-80cb4280db06"
         }
     }, {
         characterStats: {
@@ -47,7 +49,8 @@ const DailyUI5 = () => {
             class: "Mage",
             weapon: "Necronomicon",
             quote: "Spells on spells on spells",
-            description: "Stay back, cast spells, and unleash chaos! Moogi and her crystals are great at dealing high damage, but her low hp makes her weak in the front line."
+            description: "Stay back, cast spells, and unleash chaos! Moogi and her crystals are great at dealing high damage, but her low hp makes her weak in the front line.",
+            img: "https://firebasestorage.googleapis.com/v0/b/dailyui-80a05.appspot.com/o/profile%2FMoogi.svg?alt=media&token=01a25151-733b-4948-821b-314f5d2e6208"
         }
     }];
 
@@ -88,7 +91,7 @@ const DailyUI5 = () => {
             <h1>SELECT YOUR PLAYER</h1>
             <div className={classes.TopHalf}>
                 <div className={classes.TopHalfContent}>
-                    <Avatar />
+                    <Avatar img={character.characterInfo.img}/>
                     <Stats character={character}/>
                 </div>
             </div>
