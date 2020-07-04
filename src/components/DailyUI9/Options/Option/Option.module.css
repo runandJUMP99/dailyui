@@ -1,0 +1,9 @@
+.Option {
+    margin: 0 2rem;
+    transition: all 0.2s ease-out;
+}
+
+.Option:hover {
+    color: #0fabbc;
+    cursor: pointer;
+}

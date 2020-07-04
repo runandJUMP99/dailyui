@@ -1,0 +1,7 @@
+.Album {
+    background: bisque;
+    border-radius: 50%;
+    height: 10rem;
+    margin: 0 auto 3rem;
+    width: 10rem;
+}

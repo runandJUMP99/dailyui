@@ -1,0 +1,18 @@
+.Control {
+    background: #12cad6;
+    border-radius: 50%;
+    box-shadow: 0 1px 1px 3px #04a5b1;
+    color: #e4f9ff;
+    font-size: 2.45rem;
+    height: 3rem;
+    margin: 2rem 1rem;
+    text-align: center;
+    transition: all 0.2s ease-out;
+    width: 3rem;
+}
+
+.Control:hover {
+    background: #0fabbc;
+    box-shadow: 0 1px 1px 3px #02858f;
+    cursor: pointer;
+}
