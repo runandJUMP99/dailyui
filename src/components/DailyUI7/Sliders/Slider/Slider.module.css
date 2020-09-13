@@ -46,3 +46,9 @@
 .Slider button:hover {
     cursor: pointer;
 }
+
+.SliderBar {
+    display:flex;
+    justify-content: center;
+    margin: 0.5rem 0;
+}

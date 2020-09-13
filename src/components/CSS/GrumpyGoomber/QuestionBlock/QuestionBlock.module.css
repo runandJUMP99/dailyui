@@ -1,0 +1,27 @@
+.QuestionBlock {
+    background: #ffff1a;
+    border: 2px solid #dddd17;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+    color: #c0a114;
+    height: 2.5rem;
+    position: fixed;
+    right: -20%;
+    text-align: center;
+    top: 25rem;
+    width: 2.5rem;
+}
+
+.QuestionMark {
+    margin: 0.6rem 0;
+    margin-left: 0.2rem;
+    position: relative;
+    z-index: 5;
+}
+
+.Shadow {
+    bottom: 2.6rem;
+    color: black;
+    left: 0.3rem;
+    position: relative;
+}

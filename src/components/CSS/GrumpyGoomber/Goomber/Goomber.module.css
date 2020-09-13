@@ -1,0 +1,89 @@
+.Goomber {
+    bottom: 3rem;
+    left: 2rem;
+    position: fixed;
+}
+
+.Head {
+    background: #a8722a;
+    border: 1px solid black;
+    border-radius: 50% 50% 28% 28%;
+    height: 3rem;
+    position: relative;
+    top: 0.3rem;
+    width: 3.5rem
+}
+
+.Eyebrow {
+    background: #a8722a;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    height: 1rem;
+    left: 40%;
+    position: absolute;
+    top: 10%;
+    transform: rotate(45deg);
+    width: 1rem;
+}
+
+.Eyes {
+    display: flex;
+    justify-content: center;
+    margin-left: 0.3rem;
+}
+
+.Eye {
+    background: black;
+    border: 4px solid white;
+    border-radius: 50%;
+    height: 0.5rem;
+    margin: 0.9rem 0.2rem;
+    width: 0.2rem
+}
+
+.Mouth {
+    border-top: 2px solid black;
+    border-radius: 50%;
+    bottom: 10%;
+    height: 0.3rem;
+    left: 40%;
+    position: absolute;
+    width: 1rem;
+}
+
+.Feet {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.LeftFoot,
+.RightFoot {
+    background: black;
+    border-radius: 50% 50% 30% 30%;
+    height: 0.8rem;
+    width: 1.3rem;
+}
+
+@keyframes :global(left-walk) {
+    0% {
+        transform: translateY(-0.25rem);
+    }
+    50% {
+        transform: translateY(0rem);
+    }
+    100% {
+        transform: translateY(-0.25rem);
+    }
+}
+
+@keyframes :global(right-walk) {
+    0% {
+        transform: translateY(0rem);
+    }
+    50% {
+        transform: translateY(-0.25rem);
+    }
+    100% {
+        transform: translateY(0rem);
+    }
+}

@@ -1,0 +1,48 @@
+.Floor {
+    bottom: 0;
+    display: flex;
+    position: fixed;
+    width: 100%;
+}
+
+.FloorChunk {
+    background: #a8722a;
+    border: 2px solid tan;
+    border-left: none;
+    bottom: 0;
+    height: 3rem;
+    width: 25%;
+}
+
+.FloorChunkOuter {
+    border-left: 2px solid tan;
+    border-right: 2px solid tan;
+    height: 1rem;
+    width: 50%;
+}
+
+.FloorChunkMiddle {
+    border-left: 2px solid tan;
+    border-right: 2px solid tan;
+    height: 1rem;
+    margin: auto;
+    width: 50%;
+}
+
+.FloorChunkDivider {
+    background: tan;
+    height: 2px;
+    width: 100%;
+}
+
+@keyframes auto-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

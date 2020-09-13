@@ -103,9 +103,10 @@ const DailyUI7 = () => {
     return (
         <div className={classes.DailyUI7}>
             <h1 className={classes.JumboValue} style={jumboStyle}>{jumboValue}</h1>
-            <h1>Calm</h1>
+            <h1>Repose</h1>
             <Sliders onSlide={handleSlide} onChange={handleAdjustment} values={sliders}/>
             <Moods onClick={handleClick}/>
+            <img src="https://firebasestorage.googleapis.com/v0/b/dailyui-80a05.appspot.com/o/repose%2FSleep.svg?alt=media&token=0cf4b845-5c4c-4b7a-9673-11544d2e9253" alt=""/>
         </div>
     );
 }
